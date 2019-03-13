@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<p>Instructions for using the app:</p>
+			<ul>
+				<li>Use the keys "W" (up), "A" (previous), "S" (down), "D" (next) </br>
+					to navigate the calculator and "F" to select the highlighted button</li>
+				<li>To simulate a 5-button switch control use all 5 of the above keys</li>
+				<li>To simulate a 3 button switch control use "A" (next) "D" (previous) and "F" (select)</li>
+			</ul>
+			<p>Formula tested:</p>
+			<ul>
+				<li>572 + 693 / 5 * 0 - 48 = </li>
+				
+			</ul>
+			<p>Test results (5-Button)</p>
+			<ul>
+				<li>Attempt 1: 25.69 sec</li>
+				<li>Attempt 2: 23.14 sec</li>
+				<li>Attempt 3: 22.74 sec</li>
+				<li>Attempt 4: 23.63 sec</li>
+				<li>Attempt 5: 24.77 sec </br> Mean: 23.994 sec
+					Median:	23.63 sec</li>
+			</ul>
+			<p>Test results (3-Button)</p>
+			<ul>
+				<li>Attempt 1: 26.54 sec</li>
+				<li>Attempt 2: 27.76 sec</li>
+				<li>Attempt 3: 26.22 sec</li>
+				<li>Attempt 4: 25.63 sec</li>
+				<li>Attempt 5: 27.68 sec</br>Mean:	26.6 sec
+					Median:	26.22 sec</li>
+			</ul>
+			<p>Mean difference of 2.606 sec</p>
+			<p>Mean difference of 2.59 sec</p>
+			<p>Making 5 button fast by around two and a half seconds, </br>
+			while this is expected, this difference is smaller than I thought it would be.</p>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
